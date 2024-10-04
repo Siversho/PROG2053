@@ -1,0 +1,241 @@
+/*
+All of the fonts i use are defined in all of the CSS documents, even if not in use.
+For accessabilities sake :) 
+*/
+
+
+@font-face {
+    font-family: 'Logo';
+    src: url(/Fonts/Roboto-Bold.ttf);
+}
+@font-face {
+    font-family: 'Links';
+    src: url(/Fonts/Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: 'Italic';
+    src: url(/Fonts/Roboto-BlackItalic.ttf);
+}
+
+/*First blue header*/
+#header {
+    background-color: #1f2936;
+    margin: 50px;
+    padding: 30px;
+    text-align:justify;
+    text-align:center;
+    border-bottom: 1px solid gray;
+    margin-bottom: 0px;
+
+}
+
+.header-logo {
+    font-family: 'Logo', sans-serif;
+    font-size: large;
+    color: white;
+}
+
+.header-links a{
+    font-family: 'Links';
+    font-size: small;
+    word-spacing: 1.5%;
+    justify-content: space-between;
+    color:white;
+}
+/*End of the first border*/
+
+
+/*Second border begins*/
+#header2 {
+    display: flex; /* Im using Flexbox to get a flexible layout. This will be seen again later */
+    background-color: #1f2936;
+    margin:50px;
+    padding: 30px;
+    justify-content: space-between;
+    margin-top:0px;
+    align-items: center;
+}
+
+.header2-left, .header2-right {
+    flex: 1; /* Setting each section to take up equal space */
+    text-align: left;
+    padding: 30px;  
+    background-color: 1f2936;
+    color: white;
+    margin: 10px;
+}
+
+.header2-left{
+    font-family: Logo, Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    margin-left: 100px;     
+    padding-left:100px;
+    float:left;
+    justify-items: center;
+}
+
+.header2-right {
+    float:right;
+    padding-right:100px;
+}
+
+.header2-p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.70em;
+}
+/*End of second border*/
+
+
+/*A simple button layot*/
+.button {
+    background-color: #3782f5; /* Green */
+    font-family:logo,Arial, Helvetica, sans-serif;
+    font-size:small;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    padding: 2px 7px;
+    text-align: center;
+    display: inline-block;
+  }
+
+/*Simple header layout*/
+.h1 {
+    font-family: 'Logo',Arial, Helvetica, sans-serif;
+    text-align:center;
+    font-size:150%;
+}
+
+
+/*Here the 3rd containter begins, blue boxes with text next to them. This was quite hard to achieve
+so the code is going to change in consistency due to finding multiple sourcing helping.*/
+.container {
+    display: flex; /*Again using Flexbox*/
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .box {
+    width: 150px;       /*general sizing*/
+    height: 100px; 
+    border: 4px solid #3782f5;
+    margin-right: 25px; 
+    border-radius: 6px;
+    margin-left: 25px;
+    padding:10px;
+
+  }
+  
+  .text {
+    flex: 1; /* Allows text to take up remaining space */
+    max-width: 350px;
+    font-family: 'Links', Arial, Helvetica, sans-serif;
+    text-align: left;
+
+
+  }
+/*End of Third container---*/
+
+
+
+
+  
+/*Next container, this is the greybox start*/
+.container2 {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: block;
+}
+
+.greybox {
+    margin: 50px;
+    padding: 30px;
+    border: solid #e4e5eb;
+    background-color: #e4e5eb;
+    margin-bottom:0px;
+}
+.p1 {
+    margin-top:70px;
+    font-family: 'Italic', Arial, Helvetica, sans-serif;
+    font-size: 1.5em;    /*Relative sizing*/
+    text-shadow: #1f2936 1px 0 10px; /*general shadowing for aesthetics*/
+    margin-bottom:0px;
+}
+.pquote {
+    font-family: 'Italic';
+    position: relative;
+    right: -50px;       /*Positioning the quote line manually using relative to the parent placing*/
+    top: -30px;
+
+}
+/*End of 4th container, greybox...*/
+
+
+
+
+/*Start of 5th container, the blue-box*/
+.actioncontainer {
+    display: flex;  /*Oh look here is flex again*/
+    align-items: center;
+    justify-content: center;
+}
+
+.actionbluebox{
+    background-color: #3782f5;
+    margin-top:0px;
+    margin:50px;
+    height: 50px;
+    padding:30px;
+    width:750px;     
+    border-radius:6px;
+    display: flex;
+    flex-direction: column; /*Just to get the text in row, on top of each other*/
+    
+}
+
+.actionheader {
+    font-family:'Logo';
+    color: white;
+}
+.actionparagraph {  
+    font-family: 'Links';
+    color:white;
+}
+
+.actionbutton {
+    position: relative; /*Adjusting the actionbutton manually & relatively*/
+    right:200px;
+    background-color: #3782f5;
+    font-family:'Logo',Arial, Helvetica, sans-serif;
+    font-size:small;
+    border: solid white;
+    color: white;
+    border-radius: 4px;
+    padding: 2px 7px;
+
+}
+
+
+/*Beginning of my footer, note that this isn't a sticky footer like the ones we will see later,
+its just literally at the bottom.*/
+.footer {
+    background-color: #1f2936;
+    margin:50px;
+    margin-top:0px;
+    padding: 30px;
+    height: auto;
+    align-items: center;
+}
+
+.footerText {
+    font-family: 'Links',Arial, Helvetica, sans-serif;
+    color:white;
+    text-align: center;
+    font-size:smaller;
+}
+/*End of footer, and marks the end of the Index.CSS document.*/
+
+

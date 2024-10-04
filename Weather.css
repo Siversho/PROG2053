@@ -1,0 +1,85 @@
+/*
+All of the fonts i use are defined in all of the CSS documents, even if not in use.
+For accessabilities sake :) 
+*/
+
+
+@font-face {
+    font-family: 'Logo';
+    src: url(/Fonts/Roboto-Bold.ttf);
+}
+@font-face {
+    font-family: 'Links';
+    src: url(/Fonts/Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: 'Italic';
+    src: url(/Fonts/Roboto-BlackItalic.ttf);
+}
+
+
+/*Same header as always*/
+#header {
+    background-color: #1f2936;
+    margin: 50px;
+    padding: 30px;
+    text-align:justify;
+    text-align:center;
+    border-bottom: 1px solid gray;
+
+}
+
+.header-logo {
+    font-family: 'Logo', sans-serif;
+    font-size: large;
+    color: white;
+}
+
+.header-links a{
+    font-family: 'Links';
+    font-size: small;
+    word-spacing: 1.5%;
+    justify-content: space-between;
+    color:white;
+}
+
+
+/*Here my main begins, now this is the first time i use main, but i figured i might as well use it*/
+main {
+    padding: 20px;
+    display: flex;      /*Again, using flex*/
+    flex-wrap: wrap;       
+    gap: 20px;
+    justify-content: space-around;
+}
+
+article {
+    border-radius: 8px; /*General styling for my weather posts*/
+    padding: 20px;
+    border: solid black;
+    background-color:#1f2936;
+    color:white;
+    width: 250px;
+    text-align: center;
+    font-family: 'Logo';
+}
+
+
+/*And my footer marks the end of that document*/
+.footer {
+    background-color: #1f2936;
+    margin:50px;
+    padding: 30px;
+    position: sticky;
+    bottom: 0;
+    padding: 10px;
+    text-align: center;
+}
+
+.footerText {
+    font-family: 'Links',Arial, Helvetica, sans-serif;
+    color:white;
+    text-align: center;
+    font-size:smaller;
+}
